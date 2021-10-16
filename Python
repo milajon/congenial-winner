@@ -1,0 +1,66 @@
+print("Welcome to the Millennial Name Generator. \n")
+print("Choose a creative name:\n\n")
+
+input("\nPress Enter to start.")
+
+first = ('Channing', 'Sable', 'Katniss', 'Lark', 'Jaylah', 'Vivienne', 'Arya',
+         'Karter', 'Brynlee', 'Beckett', 'Cash', 'Arabella', 'Jax', 'Norah',
+         'Adalyn', 'Isla', 'Aaliyah', 'Londyn', 'Lyla', 'King', 'Zayden', 
+         'Kingston', 'Gael', 'Maddox', 'Ryker', 'Brantley', 'Paisley', 'Khloe', 
+         'Mila', 'Nevaeh', 'Bentley', 'Beatrice', 'Clara', 'Duke', 'Ellis', 
+         'Everett', 'Felix', 'Hazel', 'Josephine', 'Leo', 'Penelope', 
+         'Lillian', 'Lola', 'Mae', 'Max', 'Pearl', 'Rose', 'Sterling', 
+         'Theodore', 'Vera', 'Evelyn', 'Abeba', 'Abrianna', 'Kamirah', 
+         'Kasmira', 'Antonio', 'Akil', 'Yayah', 'Damien', 'Bryson', 'Aman', 
+         'Kafi', 'Zamari', 'Tyrice', 'Alina', 'Dara', 'Kira', 'Lara', 'Dima', 
+         'Dalia', 'Tova', 'Uma', 'Una', 'Zola', 'Zelda', 'Talia', 'Rio', 'Maia', 
+         'Zahara', 'Azami', 'Paz', 'Samir', 'Nia', 'Noor', 'Malik', 'Lina', 
+         'Janina', 'Kareena', 'Sheela', 'Sonia', 'Nikita', 'Hans', 'Jay', 
+         'Kiran', 'Bodhi', 'Sunil', 'Aditya', 'Duska', 'Asa', 'Iman', 'Kailah')
+
+middle = ('Lataya', 'Nina', 'Nzinga', 'Oba', 'Shanice', 'Garcia', "Aiko", 
+          'Devika', 'Elsa', 'Poppy', ' Thea', 'Afua', 'Blanca', 'Bronwyn', 
+          'Chnada', 'Damaris', 'Tokunbo', 'Yadira', 'Sekai', 'Frida', 'Blaire' 
+          'Brooke', 'Luz', 'Paige', 'Jun', 'Ava', 'Avery', 'Ellis', 'Onyx', 
+          'Solace', 'River', 'Albany', 'Elim', 'Seneca', 'Shiloh', 'Phoenix', 
+          'Salem', 'Anona', 'Tennessee', 'Zuma', 'Cairo', 'Jericho', 'Everest', 
+          'Holland', 'Sequoia', 'Tempest', 'Indigo', 'Gabagool', 'Yarrow', 
+          'Marvel', 'True', 'Valor', 'Jubilee', 'Honor', 'Allegro', 'Endeavor', 
+          'Ever', 'Amity', 'Bliss', 'Pax', 'Fidelis', 'Valor', 'Bodhi', 'Zen', 
+          'Picasso', 'Sundance', 'Kalina', 'Angelou', 'Kiri', 'Lorca', 'Monroe', 
+          'Darcey', 'Lovelace', 'Audne', 'Faraday', 'Matisse', 'Poe', 'Wilde', 
+          'Harlow', 'Monet', 'Sojourner', 'Austen', 'Adair', 'Caro', 'Marin',
+          'Ren', 'Wynn', 'Akira', 'Evren', 'Lior', 'Rumi', 'Ariel', 'Fenn', 
+          'Nico', 'Shea', 'Zennor', 'Blaise', 'Irie', 'Valentine', 'Noor')
+
+last = ('Blaine', 'Blaire', 'Cameron', 'Ellis', 'Kennedy', 'Kiernan', 'Lee', 
+        'Lennon', 'Lenox', 'Mason', 'Parker', 'Quinn', 'Riley', 'Sutton', 
+        'Taylor', 'Alex', 'Kelly', 'Kelsey', 'Leslie', 'Logan', 'Eos', 'Neri', 
+        'Tesfaye', 'Traore', 'Ngoma', 'Kamara', 'Lopes', 'Gomes', 'Jallow', 
+        'Nkurunziza', 'Mensah', 'Deng', 'Ali', 'Hoareau', 'Langa', 'Saidi' 
+        'Ngo', 'Ivanova', 'Wang', 'Kahn', 'Awad', 'Perera', 'Ganbold', 'Akter', 
+        'Haji', 'Dela Cruz', 'Maung', 'Ismailova', 'Kim', 'Rossi', 'Nowak', 
+        'Yilmaz', 'Muller', 'Martin', 'De Jong', 'Silva', 'Jensen', 'Tamm', 
+        'Popovic', 'Gasperoni', 'Korhonen', 'Borg', 'Smith', 'Williams', 
+        'Charles', 'Rolle', 'Jean', 'Brown', 'Joseph', 'Clarke', 'Lin', 
+        'Mamani', 'Quispe', 'Gonzalez', 'Rodriguez', 'Garcia', 'Da Silva', 
+        'Tellei', 'John', 'Harris', 'Kumar', 'Tari', 'Kumar', 'Layu', 
+        'Meredith', 'Mae', 'Apinelu', 'John', 'Ioane', 'Wilson', 'Davis', 
+        'White', 'Thompson', 'Moore', 'Jackson', 'Lewis', 'Allen', 'King')
+
+while True:
+  firstName = random.choice(first)
+
+  middleName = random.choice(middle)
+
+  lastName = random.choice(last)
+
+  print("\n\n")
+  print("{} {} {}".format(firstName, middleName, lastName), file=sys.stderr)
+  print("\n\n")
+
+  try_again = input("\n\nTry again? (Press Enter else n to quit)\n ")
+  if try_again.lower() == "n":
+     break
+
+input("\nPress Enter to exit.")
