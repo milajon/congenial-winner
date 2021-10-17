@@ -1,3 +1,5 @@
+import sys, random
+
 print("Welcome to the Millennial Name Generator. \n")
 print("Choose a creative name:\n\n")
 
